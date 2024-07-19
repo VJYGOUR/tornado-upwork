@@ -925,12 +925,11 @@ section:has(.compliance) {
 .inside-c span {
   font-size: 0.9rem;
 }
-.filtdex{
+.filtdex {
   z-index: -1;
   filter: blur(3px);
 }
 .cont {
- 
   width: 75%;
   margin-left: auto;
   margin-right: auto;
@@ -1101,7 +1100,7 @@ section:has(.compliance) {
   padding-left: 1rem;
 }
 .div1-inputt {
-  background: transparent;
+  background: black;
   display: block;
   outline: none;
   border: 1px solid #94febf;
@@ -1111,6 +1110,7 @@ section:has(.compliance) {
   width: 95%;
   border-radius: 0.3rem;
   margin-top: 0.5rem;
+  color: white;
 }
 .div-formm {
   margin-top: 1rem;
@@ -1154,6 +1154,7 @@ section:has(.compliance) {
   width: 2rem;
   background-color: #6b6b6b;
 }
+
 @media only screen and (max-width: 1000px) {
   .deposit-statistics {
     flex-direction: column;
