@@ -20,13 +20,31 @@ var divs = document.querySelectorAll(".cont-btn");
 var allActive = document.querySelectorAll(".all-active");
 var alldivv = document.querySelectorAll(".all-divv");
 var allbtnn = document.querySelectorAll(".all-btnn");
+var btall = document.querySelectorAll(".btall");
 
+btall.forEach(function (button, index) {
+  button.addEventListener("click", function () {
+    showD(index);
+  });
+});
+function showD(indexToShow) {
+  btall.forEach(function (bt, index) {
+    if (index === indexToShow) {
+      bt.classList.add("btall");
+      bt.classList.remove("bttfade");
+    } else {
+      bt.classList.remove("btall");
+      bt.classList.add("bttfade");
+    }
+  });
+}
 allbtnn.forEach(function (button, index) {
   button.addEventListener("click", function () {
     showDi(index);
     console.log(index);
   });
 });
+
 function showDi(indexToShow) {
   alldivv.forEach(function (div, index) {
     if (index === indexToShow) {
@@ -59,6 +77,7 @@ buttons.forEach(function (button, index) {
     buttons.forEach(function (button) {
       button.classList.remove("btnn-1-main");
     });
+
     // Add underline to the clicked button
     button.classList.add("btnn-1-main");
   });

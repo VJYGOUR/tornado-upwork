@@ -940,9 +940,11 @@ section:has(.compliance) {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  border: solid 0.3px;
+  border: solid 0.1px #2a2a2a;
+
   border-top: 0;
-  border-radius: 1rem;
+  border-bottom-left-radius: 1rem;
+  border-bottom-right-radius: 1rem;
   padding: 1rem 1rem 1rem 1rem;
 }
 
@@ -969,20 +971,24 @@ section:has(.compliance) {
   background-color: #0f1f19;
   border-radius: 4px;
   cursor: pointer;
+  opacity: 0.5;
 }
 .proposall span {
-  font-weight: bold;
+  font-weight: 1000;
 }
 
 .proposall button {
-  color: #94febf;
   background-color: transparent;
+
   font-family: inherit;
   font-size: 1rem;
   border-top: 0;
   border-left: 0;
   border-right: 0;
   border-bottom: 0;
+}
+.proposall button:hover {
+  cursor: pointer;
 }
 .proposall-btn {
   display: flex;
@@ -1076,7 +1082,7 @@ section:has(.compliance) {
 
 .btnn-1-main {
   border-bottom: #94febf;
-
+  color: #94febf;
   border-top: 0;
   border-left: 0;
   border-right: 0;
@@ -1136,7 +1142,7 @@ section:has(.compliance) {
   font-size: large;
 }
 .new-chapter {
-  font-weight: bold;
+  font-weight: bolder;
   width: 90%;
   margin-left: auto;
   margin-right: auto;
@@ -1154,7 +1160,21 @@ section:has(.compliance) {
   width: 2rem;
   background-color: #6b6b6b;
 }
-
+.mngbtnn {
+  color: #94febf;
+  display: flex;
+  gap: 0.5rem;
+}
+.mngbtnn:hover {
+  text-decoration: underline #94febf;
+  cursor: pointer;
+}
+.btall {
+  color: #94febf;
+}
+.bttfade {
+  color: #363636;
+}
 @media only screen and (max-width: 1000px) {
   .deposit-statistics {
     flex-direction: column;
