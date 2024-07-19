@@ -918,16 +918,35 @@ section:has(.compliance) {
   padding: 12px 16px;
   cursor: pointer;
 }
+.inside-c p {
+  font-size: 1.3rem;
+  font-weight: bold;
+}
+.inside-c span {
+  font-size: 0.9rem;
+}
+.filtdex{
+  z-index: -1;
+  filter: blur(3px);
+}
 .cont {
-  width: 80%;
+ 
+  width: 75%;
   margin-left: auto;
   margin-right: auto;
   padding-top: 2rem;
 }
+
 .sub-cont {
   display: flex;
   justify-content: space-between;
+  align-items: center;
+  border: solid 0.3px;
+  border-top: 0;
+  border-radius: 1rem;
+  padding: 1rem 1rem 1rem 1rem;
 }
+
 .sub-cont p {
   color: #94febf;
   margin-top: 1rem;
@@ -936,14 +955,38 @@ section:has(.compliance) {
   display: flex;
   justify-content: space-between;
   margin-top: 5rem;
+  margin-bottom: 2rem;
+  font-size: 1.4rem;
 }
+.createprop {
+  height: 37px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0 1rem 0 1rem;
+  font-size: 1rem;
+  color: #94febf;
+  border: 1px solid #94febf;
+  background-color: #0f1f19;
+  border-radius: 4px;
+  cursor: pointer;
+}
+.proposall span {
+  font-weight: bold;
+}
+
 .proposall button {
   color: #94febf;
   background-color: transparent;
-
+  font-family: inherit;
+  font-size: 1rem;
   border-top: 0;
   border-left: 0;
   border-right: 0;
+  border-bottom: 0;
+}
+.proposall-btn {
+  display: flex;
 }
 .items-sub-cont {
   display: grid;
@@ -951,20 +994,166 @@ section:has(.compliance) {
   background-color: #242424;
   border-radius: 1rem;
   padding: 1rem;
+  align-items: center;
+  margin-bottom: 2rem;
 }
 .executee {
   display: flex;
+
   gap: 1.5rem;
   margin-top: 0.9rem;
+  align-items: center;
+}
+.executee button {
+  all: unset;
+  padding: 0.5rem;
+  background-color: #855ff3;
+  border-radius: 0.2rem;
+  margin: 0 0 0 0.5rem;
+  font-size: 0.7rem;
+}
+
+.fifsix {
+  background-color: #363636;
+  border-radius: 0.4rem;
+  padding: 0.5rem;
+  font-size: 0.7rem;
 }
 .foragainst {
   display: flex;
   flex-direction: column;
+  padding: 1rem;
   gap: 1.4rem;
+  background-color: #1a1a1a;
 }
-div:nth-child() {
+.foragainst-sub {
+  display: flex;
+  justify-content: space-between;
+}
+.foragainst-spann-1 {
+  color: #94fbef;
+}
+.foragainst-spann-2 {
+  color: #ff0658;
+}
+.manages-btn {
+  background-color: #000403;
+  font-size: 0.9rem;
+  top: 5rem;
+  display: none;
+  position: fixed;
+  padding-left: 2rem;
+  padding-right: 2rem;
+  padding-top: 2rem;
+  padding-bottom: 2rem;
+  z-index: 2;
+  max-width: 39%;
+  left: 50%;
+
+  transform: translate(-50%);
+}
+.btn-groupp {
+  display: flex;
+  position: relative;
 }
 
+.active {
+  border-bottom: #94febf;
+  border-top: 0;
+  border-left: 0;
+  border-right: 0;
+  padding-bottom: 5px;
+  border-style: solid;
+}
+.btn-groupp button {
+  background: none;
+  color: inherit;
+  border: none;
+  padding: 0;
+  font: inherit;
+  cursor: pointer;
+  outline: inherit;
+}
+
+.btnn-1-main {
+  border-bottom: #94febf;
+
+  border-top: 0;
+  border-left: 0;
+  border-right: 0;
+  padding-bottom: 5px;
+  border-style: solid;
+}
+.btnn-1-sub {
+  padding-right: 1rem;
+  padding-left: 1rem;
+}
+
+.cont-btn {
+  padding-top: 1rem;
+  line-height: 1.7rem;
+}
+.hiddenn {
+  display: none;
+}
+
+.close-manage {
+  padding-left: 1rem;
+}
+.div1-inputt {
+  background: transparent;
+  display: block;
+  outline: none;
+  border: 1px solid #94febf;
+  padding-bottom: 0.7rem;
+  padding-top: 0.7rem;
+  padding-left: 1rem;
+  width: 95%;
+  border-radius: 0.3rem;
+  margin-top: 0.5rem;
+}
+.div-formm {
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+}
+.div1-sect {
+  display: flex;
+}
+.div1-btnn {
+  display: flex;
+  gap: 1rem;
+  margin-top: 1rem;
+}
+.div1-btnn-sub {
+  width: 45%;
+}
+.div1-btnn-sub-extra {
+  width: 100%;
+}
+.all-active {
+  padding-left: 1rem;
+  padding-right: 1rem;
+  font-size: large;
+}
+.new-chapter {
+  font-weight: bold;
+  width: 90%;
+  margin-left: auto;
+  margin-right: auto;
+}
+.datee span:nth-child(1) {
+  color: #6b6b6b;
+}
+.datee {
+  font-size: 0.9rem;
+}
+
+.goog-te-combo {
+  border-radius: 100%;
+  height: 2rem;
+  width: 2rem;
+  background-color: #6b6b6b;
+}
 @media only screen and (max-width: 1000px) {
   .deposit-statistics {
     flex-direction: column;
@@ -1056,6 +1245,72 @@ div:nth-child() {
     flex-direction: column;
     align-items: center;
     gap: 20px;
+  }
+  .sub-cont {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    gap: 1rem;
+    justify-content: center;
+    border: solid 0.3px;
+    border-top: 0;
+    border-radius: 1rem;
+  }
+  .manages-btn {
+    background-color: #000403;
+    font-size: 0.9rem;
+    top: 5rem;
+    display: none;
+    position: absolute;
+    margin-left: 1rem;
+    padding-left: 1rem;
+    padding-right: 1rem;
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+    z-index: 2;
+    max-width: 100%;
+    left: 50%;
+    transform: translate(-50%);
+  }
+  .proposall {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    align-items: center;
+    margin-top: 5rem;
+    margin-bottom: 2rem;
+    font-size: 1.4rem;
+  }
+  .items-sub-cont {
+    font-size: small;
+    display: flex;
+    flex-direction: column;
+    background-color: #242424;
+    border-radius: 1rem;
+    padding: 1rem;
+    align-items: unset;
+    margin-bottom: 2rem;
+  }
+  .datee {
+    all: unset;
+  }
+  .executee {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+    align-items: unset;
+    margin-top: 0.9rem;
+    margin-bottom: 2rem;
+  }
+
+  .btn-groupp {
+    display: flex;
+    position: relative;
+    font-size: small;
+  }
+  .btnn-1-sub {
+    padding-right: 0.5rem;
+    padding-left: 0.5rem;
   }
 }
 
