@@ -746,6 +746,7 @@ footer {
 .rightFooter {
   display: flex;
   align-items: center;
+  gap: 0.3rem;
 }
 
 .rightFooter a {
@@ -1175,6 +1176,52 @@ section:has(.compliance) {
 .bttfade {
   color: #363636;
 }
+
+.imgs {
+  object-fit: cover;
+  width: 2rem;
+}
+.all-imgs {
+  object-fit: cover;
+  width: 1.5rem;
+}
+.rightFooter {
+  position: relative;
+}
+.countriesimgs {
+  position: absolute;
+  bottom: 3rem;
+  right: 0;
+  border: 0.1px solid #94febf;
+  overflow: hidden;
+  width: 5rem;
+  background-color: #000403;
+  border-radius: 0.5rem;
+}
+.imgs-div {
+  display: flex;
+  padding-top: 0.5rem;
+  justify-content: center;
+  gap: 0.5rem;
+  align-items: center;
+  padding-bottom: 0.8rem;
+}
+.imgs-div:hover {
+  cursor: pointer;
+  background-color: #0e1f17;
+  color: #94febf;
+}
+.imgs-background {
+  background-color: #94febf;
+
+  color: #000403;
+}
+.img-a {
+  border-left: #4f4f4f solid 1px;
+  margin-left: 0.5rem;
+  padding-left: 1.5rem;
+}
+
 @media only screen and (max-width: 1000px) {
   .deposit-statistics {
     flex-direction: column;

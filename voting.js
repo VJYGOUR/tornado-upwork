@@ -21,7 +21,58 @@ var allActive = document.querySelectorAll(".all-active");
 var alldivv = document.querySelectorAll(".all-divv");
 var allbtnn = document.querySelectorAll(".all-btnn");
 var btall = document.querySelectorAll(".btall");
+var imgs = document.querySelector(".imgs");
+var allimgs = document.querySelectorAll(".all-imgs");
+var countriesimgs = document.querySelector(".countriesimgs");
+var divimagemain = document.getElementById("divimagemain");
+var x = document.querySelectorAll(".imgs-div");
 
+divimagemain.addEventListener("click", function () {
+  if (countriesimgs.style.display === "none") {
+    countriesimgs.style.display = "block";
+  } else {
+    countriesimgs.style.display = "none";
+  }
+});
+//
+x.forEach(function (curr, i) {
+  curr.addEventListener("click", function () {
+    imghandler(i);
+  });
+});
+//
+function imghandler(i) {
+  allimgs.forEach(function (imgg, index) {
+    if (i === index) {
+      let myimg = imgg.src;
+      imgs.src = myimg;
+      countriesimgs.style.display = "none";
+      addcl(index);
+    }
+  });
+}
+// --------------------------------------------------------------------
+// allimgs.forEach(function (imgg, index) {
+//   imgg.addEventListener("click", function () {
+//     let myimg = imgg.src;
+//     imgs.src = myimg;
+//     countriesimgs.style.display = "none";
+//     addcl(index);
+//   });
+// });
+//
+//
+function addcl(index) {
+  x.forEach(function (curr, i) {
+    if (index === i) {
+      curr.classList.add("imgs-background");
+    } else {
+      curr.classList.remove("imgs-background");
+    }
+  });
+}
+//
+//
 btall.forEach(function (button, index) {
   button.addEventListener("click", function () {
     showD(index);
