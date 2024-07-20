@@ -965,6 +965,7 @@ section:has(.compliance) {
   margin-top: 5rem;
   margin-bottom: 2rem;
   font-size: 1.4rem;
+  align-items: center;
 }
 .createprop {
   height: 37px;
@@ -988,7 +989,8 @@ section:has(.compliance) {
   background-color: transparent;
 
   font-family: inherit;
-  font-size: 1rem;
+  font-size: 14px;
+  margin-bottom: 3px;
   border-top: 0;
   border-left: 0;
   border-right: 0;
@@ -1151,6 +1153,7 @@ section:has(.compliance) {
   padding-left: 1rem;
   padding-right: 1rem;
   font-size: large;
+  cursor: pointer;
 }
 .new-chapter {
   font-weight: bolder;
