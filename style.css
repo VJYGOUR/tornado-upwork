@@ -746,13 +746,19 @@ footer {
 .rightFooter {
   display: flex;
   align-items: center;
-  gap: 0.3rem;
+  justify-content: center;
+  gap: 0.5rem;
 }
 
-.rightFooter a {
+.rightFooter .iconn {
   cursor: pointer;
 }
+.rightFooter .iconn {
+  cursor: pointer;
 
+  display: flex;
+  justify-content: center;
+}
 .burger {
   display: none;
 }
@@ -995,6 +1001,7 @@ section:has(.compliance) {
   display: flex;
 }
 .items-sub-cont {
+  cursor: pointer;
   display: grid;
   grid-template-columns: 3fr 1fr;
   background-color: #242424;
@@ -1038,6 +1045,9 @@ section:has(.compliance) {
 }
 .foragainst-spann-1 {
   color: #94fbef;
+  display: flex;
+  align-items: center;
+  gap: 0.4rem;
 }
 .foragainst-spann-2 {
   color: #ff0658;
@@ -1179,7 +1189,7 @@ section:has(.compliance) {
 
 .imgs {
   object-fit: cover;
-  width: 2rem;
+  width: 1.6rem;
 }
 .all-imgs {
   object-fit: cover;
@@ -1268,6 +1278,12 @@ section:has(.compliance) {
   .options > div {
     padding: 0;
   }
+}
+.cont {
+  width: 90%;
+  margin-left: auto;
+  margin-right: auto;
+  padding-top: 2rem;
 }
 
 @media only screen and (max-width: 800px) {

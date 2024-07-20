@@ -69,7 +69,7 @@ function addcl(index) {
 }
 //
 //
-btall.forEach(function (button, index) {
+allbtnn.forEach(function (button, index) {
   button.addEventListener("click", function () {
     showD(index);
   });
@@ -88,7 +88,6 @@ function showD(indexToShow) {
 allbtnn.forEach(function (button, index) {
   button.addEventListener("click", function () {
     showDi(index);
-    console.log(index);
   });
 });
 
