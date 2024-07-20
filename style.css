@@ -1232,6 +1232,11 @@ section:has(.compliance) {
   margin-left: 0.5rem;
   padding-left: 1.5rem;
 }
+.ts {
+  position: absolute;
+  left: -2rem;
+  top: 0.1rem;
+}
 
 @media only screen and (max-width: 1000px) {
   .deposit-statistics {
@@ -1278,9 +1283,28 @@ section:has(.compliance) {
   .options > div {
     padding: 0;
   }
+  .executee {
+    display: flex;
+
+    margin-top: 0.9rem;
+    align-items: center;
+  }
+  .items-sub-cont {
+    cursor: pointer;
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    background-color: #242424;
+    border-radius: 1rem;
+    padding: 1rem;
+    align-items: center;
+    margin-bottom: 2rem;
+  }
+  .ex-ist {
+    display: flex;
+  }
 }
 .cont {
-  width: 90%;
+  width: 96%;
   margin-left: auto;
   margin-right: auto;
   padding-top: 2rem;
@@ -1344,17 +1368,7 @@ section:has(.compliance) {
     border-bottom-left-radius: 1rem;
     border-bottom-right-radius: 1rem;
   }
-  .sub-cont {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    border: solid 0.1px #2a2a2a;
 
-    border-top: 0;
-    border-bottom-left-radius: 1rem;
-    border-bottom-right-radius: 1rem;
-    padding: 1rem 1rem 1rem 1rem;
-  }
   .manages-btn {
     background-color: #000403;
     font-size: 0.9rem;
