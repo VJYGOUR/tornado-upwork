@@ -28,11 +28,7 @@ var divimagemain = document.getElementById("divimagemain");
 var x = document.querySelectorAll(".imgs-div");
 
 divimagemain.addEventListener("click", function () {
-  if (countriesimgs.style.display === "none") {
-    countriesimgs.style.display = "block";
-  } else {
-    countriesimgs.style.display = "none";
-  }
+  countriesimgs.classList.toggle("hiddenn");
 });
 //
 x.forEach(function (curr, i) {
@@ -46,7 +42,7 @@ function imghandler(i) {
     if (i === index) {
       let myimg = imgg.src;
       imgs.src = myimg;
-      countriesimgs.style.display = "none";
+      countriesimgs.classList.add("hiddenn");
       addcl(index);
     }
   });

@@ -1190,6 +1190,7 @@ section:has(.compliance) {
 }
 .countriesimgs {
   position: absolute;
+
   bottom: 3rem;
   right: 0;
   border: 0.1px solid #94febf;
